@@ -13,8 +13,7 @@ public class Domiciliario extends Empleado{
     private double tarifaPorEntrega;
     
     public Domiciliario(String nombre, int documento, double sueldobase, String hora_ingreso , int entregas, double tarifaPorEntrega){
-        super(nombre, documento, sueldobase);
-        this.hora_ingreso = hora_ingreso;     
+        super(nombre, documento, sueldobase,hora_ingreso);    
         this.entregas = entregas;
         this.tarifaPorEntrega = tarifaPorEntrega;
     }
