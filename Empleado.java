@@ -14,10 +14,11 @@ public class Empleado {
     protected double sueldobase;
     protected String hora_ingreso;
 
-    public Empleado(String nombre, int documento, double sueldobase) {
+    public Empleado(String nombre, int documento, double sueldobase, String hora_ingreso) {
         this.nombre = nombre;
         this.documento = documento;
         this.sueldobase = sueldobase;
+        this.hora_ingreso = hora_ingreso;
     }
     
     public double pagoMensual(){
@@ -25,6 +26,6 @@ public class Empleado {
     }
     
     public String registrarHoraIngreso(){
-        return hora_ingreso;
+        return system.out.println("Hora de ingreso: " + hora_ingreso);
     }
 }
