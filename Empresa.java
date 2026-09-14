@@ -25,7 +25,7 @@ public class Empresa {
             System.out.println( empleado.getNombre() + " - Pago mensual: $" + empleado.pagoMensual() );
         }
         
-        System.out.println("//PAGO PROVEDOR");
+        System.out.println("//PAGO PROVEDOR//");
         proveedor.mostrarInformacion(); 
         System.out.println( "Pago de factura: $" + proveedor.pagarFactura() );
     }
