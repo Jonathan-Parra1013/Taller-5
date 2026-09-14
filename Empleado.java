@@ -20,12 +20,16 @@ public class Empleado {
         this.sueldobase = sueldobase;
         this.hora_ingreso = hora_ingreso;
     }
+
+    public String getNombre(){
+        return nombre;
+    }
     
     public double pagoMensual(){
         return sueldobase;
     }
     
-    public String registrarHoraIngreso(){
-        return system.out.println("Hora de ingreso: " + hora_ingreso);
+    public void registrarHoraIngreso(){
+        System.out.println("Hora de ingreso de "+nombre+": " + hora_ingreso);
     }
 }
