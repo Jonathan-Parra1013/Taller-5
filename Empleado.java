@@ -9,5 +9,22 @@ package com.github.jonathanparra1013.pagos;
  * @author jonap
  */
 public class Empleado {
+    protected String nombre;
+    protected int documento;
+    protected double sueldobase;
+    protected String hora_ingreso;
+
+    public Empleado(String nombre, int documento, double sueldobase) {
+        this.nombre = nombre;
+        this.documento = documento;
+        this.sueldobase = sueldobase;
+    }
     
+    public double pagoMensual(){
+        return sueldobase;
+    }
+    
+    public String registrarHoraIngreso(){
+        return hora_ingreso;
+    }
 }
