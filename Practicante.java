@@ -10,13 +10,13 @@ package com.github.jonathanparra1013.pagos;
  */
 public class Practicante extends Empleado {
     
-    public Practicante(String nombre, int documento, double auxilioFijo, String hora_ingreso){
-        super(nombre, documento, auxilioFijo);
+    public Practicante(String nombre, int documento, double sueldobase, String hora_ingreso){
+        super(nombre, documento, sueldobase,hora_ingreso);
     }
     
     @Override
-    public String registrarHoraIngreso(){
-        return "Para el Practicante no aplica hora de ingreso.@";
+    public void registrarHoraIngreso(){
+        System.out.println("Para el Practicante no aplica hora de ingreso.");
     }
     
 }
