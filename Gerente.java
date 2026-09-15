@@ -11,7 +11,7 @@ package com.github.jonathanparra1013.pagos;
 public class Gerente extends Empleado {
     private double bonificacion_anual;
     
-     public Gerente(String nombre, int documento, double sueldobase, String hora_ingreso , double bonificacion){
+     public Gerente(String nombre, int documento, double sueldobase, String hora_ingreso , double bonificacion_anual){
         super(nombre, documento, sueldobase,hora_ingreso);
         this.bonificacion_anual = bonificacion_anual;
         
@@ -19,7 +19,7 @@ public class Gerente extends Empleado {
      
     @Override
    public double pagoMensual(){
-        return this.sueldobase = sueldobase + bonificacion_anual;
+        return this.sueldobase = sueldobase + (bonificacion_anual/12);
     }
    
 }
